@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form" class="form">
+            <h3>Personal Information</h3>
+            <div class="form-control">
+                <label for="firstname" >firstname</label>
+                <input type="text" id="firstname">
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" checked> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div class="form-control">
+                <label for="lastname" >Lastname</label>
+                <input type="text" id="lastname">
+                <label for="gender">Nationality</label>
+                  <select name="national" id="national">
+                    <option value="thailand">Thailand</option>
+                    <option value="england">England</option>
+                    <option value="russia">Russia</option>
+                    <option value="france">France</option>
+                  </select>
+            </div>
+            <div class="form-control">
+                <label for="address">Address</label>
+                <textarea name="address" id="address" cols="35" rows="4"></textarea>
+            </div>
+            <div class="form-control">
+                <h3>Medical History</h3>
+                <input type="checkbox" id="smallpox" name="smallpox" value="smallpox">
+                <label for="vehicle1">Smallpox</label>
+                <input type="checkbox" id="mumps" name="mumps" value="mumps">
+                <label for="vehicle2">Mumps</label>
+                <input type="checkbox" id="dizziness" name="dizziness" value="dizziness">
+                <label for="vehicle3">Dizziness</label>
+                <input type="checkbox" id="sneezing" name="sneezing" value="sneezing">
+                <label for="vehicle3">Sneezing</label>
+             </div> 
+             <div class="form-control">
+                 <h4>Current Medication</h4>
+                 <label for="medication">Are you currently any medication?</label>
+                 <input type="radio" name="medication" value="yes" > Yes
+                 <input type="radio" name="medication" value="no" > No
+             </div>  
+             <div class="form-control">
+                 <h4>If you are currently taking medication, please indicate it in the space bolow:</h4>
+                 <textarea name="" id="" cols="70" rows="8"></textarea>
+             </div>  
+             <input type="reset" value="Reset">
+             <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
